@@ -1,0 +1,142 @@
+{
+  "appName": "Communication Platform as a Service (CPaaS)",
+  "baseURL": "https://qa.ngagecpaas.com",
+  "commonElements": {
+    "dashboard": {
+      "selector": "text=Hello PlatAdmin",
+      "alternates": ["text=Dashboard", "[data-testid='dashboard']"]
+    },
+    "mainMenu": {
+      "selector": "nav, [role='navigation']",
+      "alternates": ["aside", ".sidebar", ".menu"]
+    }
+  },
+  "whatsapp": {
+    "navigationKeywords": ["whatsapp", "messaging", "messages", "channels"],
+    "messagingInterface": {
+      "selector": "text=WhatsApp",
+      "alternates": [
+        "a:has-text('WhatsApp')",
+        "button:has-text('WhatsApp')",
+        "text=Messaging",
+        "text=Channels",
+        "text=Messages",
+        "[href*='whatsapp']",
+        "[href*='messaging']"
+      ]
+    },
+    "channelDropdown": {
+      "selector": "select, [role='combobox'], [role='listbox']",
+      "optionText": "WhatsApp",
+      "alternates": [
+        "text=Select Channel",
+        "text=Channel",
+        "[placeholder*='channel']"
+      ]
+    },
+    "messageInput": {
+      "selector": "textarea, [contenteditable='true'], input[type='text']",
+      "alternates": [
+        "[placeholder*='message']",
+        "[placeholder*='type']",
+        "[placeholder*='enter']",
+        "[aria-label*='message']",
+        ".message-input",
+        "#message"
+      ]
+    },
+    "sendButton": {
+      "selector": "button:has-text('Send')",
+      "alternates": [
+        "button:has-text('Submit')",
+        "button[type='submit']",
+        "[aria-label='Send']",
+        "button:has-text('Send Message')",
+        ".send-button",
+        "#send"
+      ]
+    },
+    "reportingDashboard": {
+      "selector": "text=Reports",
+      "alternates": [
+        "text=Reporting",
+        "text=Analytics",
+        "a:has-text('Reports')",
+        "[href*='report']",
+        "[href*='analytics']"
+      ]
+    }
+  },
+  "waba": {
+    "navigationKeywords": ["waba", "whatsapp business", "category", "categories"],
+    "wabaSelectionScreen": {
+      "selector": "text=WABA",
+      "alternates": [
+        "text=WhatsApp Business Account",
+        "text=WABA Management",
+        "text=Account Management",
+        "a:has-text('WABA')",
+        "[href*='waba']",
+        "text=Categories"
+      ]
+    },
+    "categoryDropdown": {
+      "selector": "select:has-text('Category'), [role='combobox']",
+      "alternates": [
+        "text=Select Category",
+        "[placeholder*='category']",
+        "[aria-label*='category']",
+        ".category-select",
+        "#category"
+      ]
+    },
+    "wabaDropdown": {
+      "selector": "select:has-text('WABA'), [role='combobox']",
+      "alternates": [
+        "text=Select WABA",
+        "[placeholder*='waba']",
+        "[aria-label*='waba']",
+        ".waba-select",
+        "#waba"
+      ]
+    }
+  },
+  "common": {
+    "submitButton": {
+      "selector": "button:has-text('Submit')",
+      "alternates": [
+        "button[type='submit']",
+        "button:has-text('Save')",
+        "button:has-text('Send')",
+        "button:has-text('Confirm')",
+        "button:has-text('OK')"
+      ]
+    },
+    "cancelButton": {
+      "selector": "button:has-text('Cancel')",
+      "alternates": [
+        "button:has-text('Close')",
+        "button:has-text('Back')"
+      ]
+    },
+    "errorMessage": {
+      "selector": ".error, [role='alert'], .alert-danger",
+      "alternates": [
+        "text=error",
+        "text=invalid",
+        "text=failed",
+        "[class*='error']",
+        "[class*='danger']"
+      ]
+    },
+    "successMessage": {
+      "selector": ".success, .alert-success",
+      "alternates": [
+        "text=success",
+        "text=sent",
+        "text=completed",
+        "[class*='success']"
+      ]
+    }
+  }
+}
